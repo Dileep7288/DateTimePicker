@@ -12,7 +12,7 @@ A SwiftUI package to show customizable date, time, and date-time pickers with a 
 
 ### Swift Package Manager
 You can add this package via Xcode:
-1. File → Add Packages → Enter GitHub URL: `https://github.com/<your-username>/DateTimePicker.git`
+1. File → Add Packages → Enter GitHub URL: `https://github.com/Dileep7288/DateTimePicker.git`
 2. Select the package and add it to your project.
 
 ## Usage
