@@ -47,12 +47,6 @@ public struct DateTimePickerSheet: View {
     public var body: some View {
         if isPresented {
             ZStack {
-                Color.black.opacity(0.4)
-                    .edgesIgnoringSafeArea(.all)
-                    .onTapGesture {
-                        onCancel?()
-                        withAnimation { isPresented = false }
-                    }
                 
                 VStack(spacing: 16) {
                     Text(title)
@@ -98,10 +92,10 @@ public struct DateTimePickerSheet: View {
                     }
                     .frame(height: 50)
                 }
-                .background(Color(UIColor.black))
+                .background(Color(UIColor.systemBackground))
                 .cornerRadius(16)
                 .padding(.horizontal, 16)
-                //.shadow(color: Color.black.opacity(0.2), radius: 10, x: 0, y: 4)
+                .shadow(color: Color.black.opacity(0.2), radius: 10, x: 0, y: 4)
             }
             .transition(.opacity.combined(with: .move(edge: .bottom)))
             .animation(.easeInOut, value: isPresented)
