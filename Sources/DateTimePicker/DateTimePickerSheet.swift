@@ -101,7 +101,7 @@ public struct DateTimePickerSheet: View {
                 .background(Color(UIColor.systemBackground))
                 .cornerRadius(16)
                 .padding(.horizontal, 16)
-                .shadow(color: Color.black.opacity(0.2), radius: 10, x: 0, y: 4)
+                //.shadow(color: Color.black.opacity(0.2), radius: 10, x: 0, y: 4)
             }
             .transition(.opacity.combined(with: .move(edge: .bottom)))
             .animation(.easeInOut, value: isPresented)
@@ -110,6 +110,7 @@ public struct DateTimePickerSheet: View {
 }
 
 public extension DateTimePickerSheet {
+    
     static func showDatePicker(
         isPresented: Binding<Bool>,
         title: String = "Select Date",
